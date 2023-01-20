@@ -100,8 +100,14 @@ header > ul, a, li {
 
     .left-home-content {
         padding: 7.5rem;
+        min-width: 100%;
     }
     
+    .right-home-content {
+        height: 1px;
+        width: 1px;
+    }
+
     .home-content-image {
         display: none;
     }
