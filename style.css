@@ -1,0 +1,108 @@
+:root {
+    --hero-bg-color: #1F2937;
+    --hero-text-color: #F9FAF8;
+    --header-link-color: #bbbcbf;
+    --subtext-color: rgba(255, 255, 255, 0.85);
+    --button-color: #0062ff;
+    --info-header-color: #1F2937;
+    --quote-section-bg-color: #E5E7EB;
+    --quote-text-color: #1F2937;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    max-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 9.6rem;  
+}
+
+li {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+}
+
+.logo {
+    color: var(--hero-text-color);
+}
+
+nav > ul > li > a:hover {
+    color: white;
+}
+
+header, main {
+    background: var(--hero-bg-color);
+    color: var(--hero-text-color    )
+}
+
+header > ul, a, li {
+    color: var(--header-link-color);
+    transition: color 0.25s;
+}
+
+.left-home-content > p {
+    color: var(--subtext-color);
+    font-size: 16px;
+    margin-bottom: 1.6rem;
+    margin-top: 1rem;
+}
+
+.left-home-content {
+    min-width: 65%;
+    max-width: 85%;
+    padding: 7.5rem;
+    padding-right: 2.3rem;
+}
+
+.container {
+    min-height: 60vh;
+    max-height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.home-content-image {
+    margin: 5rem;
+}
+
+.hero-btn {
+    padding: 0.4rem 1.2rem;
+    border-radius: 8px;
+    background: var(--button-color);
+    color: white;
+    font-weight: 700;
+    transition: 0.25s;
+}
+
+.hero-btn:hover {
+    background: #3579e6;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        grid-template-columns: 100%;
+    }
+
+    .left-home-content {
+        padding: 7.5rem;
+    }
+    
+    .home-content-image {
+        display: none;
+    }
+}
