@@ -213,3 +213,22 @@ header > ul, a, li {
     color: rgba(21, 21, 21, 0.95);
     box-shadow: #64646f33 0px 7px 29px 0px;
 }
+
+footer {
+    min-height: 5vh;
+    height: auto;
+    max-height: 8vh;
+    background: var(--hero-bg-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    padding: 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
