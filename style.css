@@ -97,19 +97,19 @@ header > ul, a, li {
     .container {
         grid-template-columns: 100%;
     }
-
     .left-home-content {
         padding: 7.5rem;
         min-width: 100%;
     }
-    
     .right-home-content {
         height: 1px;
         width: 1px;
     }
-
     .home-content-image {
         display: none;
+    }
+    .quote-content {
+        min-width: 100%;
     }
 }
 
@@ -147,4 +147,29 @@ header > ul, a, li {
     border-radius: 24px;
     margin: auto;
     margin-bottom: 0.75rem;
+}
+
+#quote {
+    background: var(--quote-section-bg-color);
+}
+
+.quote-container {
+    padding: 6rem;
+}
+
+.quote-content {
+    font-style: italic;
+    font-size: 21px;
+    margin: auto;
+    width: 50%;
+}
+
+.quote-author {
+    margin-top: 2rem;
+    margin-left: 70%;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 992px) {
 }
