@@ -170,3 +170,46 @@ header > ul, a, li {
     font-size: 22px;
     font-weight: 200;
 }
+
+#footer-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-left {
+    background: var(--button-color);
+    margin-top: 2.4rem;
+    padding: 2.4rem 4.8rem;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+    color: white;
+
+    border-radius: 12px;
+}
+
+.content-left > h3, h2, h4, h5, h6 {
+    font-size: 21px;
+}
+
+.content-left > p {
+    margin-bottom: 1rem;
+}
+
+.footer-cta-btn {
+    padding: 0.4rem 1.2rem;
+    
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+
+    font-weight: bold;
+    transition: 0.25s;
+} 
+
+.footer-cta-btn:hover {
+    border: 2px solid var(--button-color);
+    background: white;
+    color: rgba(21, 21, 21, 0.95);
+    box-shadow: #64646f33 0px 7px 29px 0px;
+}
